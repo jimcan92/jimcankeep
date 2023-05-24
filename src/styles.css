@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root,
+:root.light {
+    --bg-color: #e6e6e6;
+    --bg-color-light: #e9e9e9;
+    --btn-color: #ddd;
+    --accent-color: #5c530080;
+    --font-color: #110022;
+    --hr-color: grey;
+    --card-color: #eee;
+    --border-radius: 8px;
+}
+
+:root.dark {
+    --bg-color: #111;
+    --bg-color-light: #1f1f1f;
+    --btn-color: #333;
+    --accent-color: #7a7a7a6e;
+    --font-color: #fef0ff;
+    --icon-color: #fef0ffbb;
+    --icon-color-bold: #fef0ff;
+    --hr-color: #3c3c3c;
+    --card-color: #262626;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #111;
+        --bg-color-light: #1f1f1f;
+        --btn-color: #333;
+        --accent-color: #7a7a7a6e;
+        --font-color: #fef0ff;
+        --hr-color: #3c3c3c;
+        --card-color: #262626;
+        --color-primary: #d3d3d3;
+        --color-primary-90: #d3d3d3ee;
+        --color-primary-60: #d3d3d38a;
+        --color-secondary: rgb(187, 255, 0);
+        --color-primary-dark: #353535;
+        --color-primary-dark-90: #353535e5;
+        --color-primary-dark-60: #35353570;
+        --color-secondary-dark: rgb(255, 0, 200);
+    }
+}
+
+button,
+input,
+select {
+    background-color: var(--btn-color);
+    color: var(--font-color);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+}

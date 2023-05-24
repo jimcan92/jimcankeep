@@ -1,7 +1,7 @@
 <script>
-	import { signin } from '../services/auth';
+	import { user } from '$lib/stores';
+	import { signIn, signout } from '$lib/services';
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<button on:click={signin}>Signin</button>
+<h1>Welcome {$user?.displayName}!</h1>
+<button on:click={signout}>Sign Out</button>
